@@ -1,0 +1,27 @@
+.table_body__row {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.table_body__column {
+    display: flex;
+    text-align: left;
+    flex: 1;
+    align-items: center;
+    word-break: normal;
+    background: var(--background-primary-color);
+    padding: 1rem;
+    border: none;
+}
+
+.table_body__column_email {
+    word-break: break-all;
+}
+
+.table_body__row__first_child {
+    border-bottom-left-radius: var(--border-radius-primary);
+}
+.table_body__row__last_child {
+    border-bottom-right-radius: var(--border-radius-primary);
+}

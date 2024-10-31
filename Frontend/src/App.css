@@ -1,0 +1,125 @@
+:root {
+    /* container variables */
+    --background-primary-color: rgb(22, 22, 22);
+    --button-secondary-color: rgb(44, 44, 44);
+
+    /* text variables */
+    --text-primary-color: rgb(254, 254, 254);
+    --text-secondary-color: rgb(161, 165, 173);
+    --text-hover-color: rgb(44, 44, 44);
+    --text-size-small: 0.785rem;
+
+    /* input variables */
+    --input-background-color: rgb(15, 15, 15);
+
+    /* button variables */
+    --button-background-primary-color: rgb(44, 44, 44);
+    --button-background-secondary-color: rgb(254, 254, 254);
+
+    /* border variables */
+    --border-radius-primary: 0.8rem;
+
+    /* shadow variables */
+    --shadow-primary-color: rgba(120, 120, 120, 0.2);
+    --shadow-basic: 0 0.1rem 1rem 0.1rem var(--shadow-primary-color);
+}
+
+*,
+*::before,
+*::after {
+    /* box-sizing: border-box; */
+}
+
+* {
+    margin: 0;
+}
+
+@font-face {
+    font-family: "poppins-regular";
+    src: url("./assets//fonts/poppins/Poppins-Regular.ttf");
+}
+
+@font-face {
+    font-family: "poppins-bold";
+    src: url("./assets//fonts/poppins/Poppins-Bold.ttf");
+}
+
+body {
+    font-family: "poppins-regular";
+    line-height: 1.5;
+    color: var(--text-primary-color);
+    background-color: var(--background-primary-color);
+    height: 100vh;
+    height: 100dvh;
+    width: 100vw;
+    width: 100dvw;
+    overflow-x: hidden;
+
+    -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+
+p {
+    text-wrap: pretty;
+    font-size: var(--text-size-small);
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-wrap: balance;
+}
+
+section[id="main"] {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    flex-grow: 1;
+}
+
+div[id="container"] {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    height: 100%;
+    width: 100%;
+}
+
+#root,
+#__next {
+    isolation: isolate;
+}
+
+#root {
+    height: 100%;
+    width: 100%;
+}
